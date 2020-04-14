@@ -9,6 +9,10 @@ A webpack plugin for monaco-editor locales setting
 npm install --save-dev monaco-editor-locales-plugin
 ```
 
+```bash
+yarn add monaco-editor-locales-plugin
+```
+
 <h2 align="center">Usage</h2>
 
 **webpack config**
@@ -20,7 +24,7 @@ module.exports = {
             /**
              * support languages list, .eg ["de"]
              * embed language base on monaco-editor@0.14.6
-             * all available embed languages: de,es,fr,it,ja,ko,ru,zh-cn,zh-tw
+             * all available embed languages: de,es,fr,it,ja,ko,ru,zh-cn,zh-tw,pt-br
              * just add what you need to reduce the size
              */
             languages: [],
@@ -37,7 +41,7 @@ module.exports = {
             /**
              * self languages map, .eg {"zh-cn": {"Find": "查找", "Search": "搜索"}, "de":{}, ... }
              */
-            mapLanguage: {},
+            mapLanguages: {},
         })
     ]
 }
